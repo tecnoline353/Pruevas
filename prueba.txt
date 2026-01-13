@@ -1,1 +1,19 @@
 otro cambio
+Primera vez en un proyecto
+git init
+git status
+git add . 
+git commit -m "primer commit"
+git branch add origin URL_DEL_REPO
+git push -u origin main
+
+Uso diario normal
+git status
+git add .
+git commit -m "mensaje"
+git push
+
+Analogia Simple 
+git add = metes cosas en la caja
+git commit = cierras la caja y le pones etiqueta
+git push = envias la caja por correo a GitHub
