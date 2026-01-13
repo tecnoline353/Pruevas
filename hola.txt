@@ -1,0 +1,4 @@
+Creando mi primer txt
+desde la termil CMD
+con texto de varias 
+lineas con exito
