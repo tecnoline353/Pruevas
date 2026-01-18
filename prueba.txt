@@ -17,3 +17,86 @@ Analogia Simple
 git add = metes cosas en la caja
 git commit = cierras la caja y le pones etiqueta
 git push = envias la caja por correo a GitHub
+
+Borrar archivos en GitHub
+git rm archivo.txt
+O una carpeta:
+git rm -r carpeta
+Confirmar el cambio
+git commit -m "Eliminando archivo de prueba"
+Subir a GitHub
+git push origin main
+Ahora el archivo desaparece también de GitHub.
+
+Ver estado con Git
+git status
+Si ves:
+nothing to commit, working tree clean
+Tu carpeta local está igual que GitHub.
+Ver exactamente lo que hay en GitHub (terminal)
+Ver archivos del último commit
+git ls-tree --name-only HEAD
+Ver archivos de una carpeta específica
+git ls-tree --name-only HEAD nombre_carpeta
+Ver historial de archivos
+git log --oneline
+Ver cambios de un commit
+git show --name-only f2c9274
+
+Forma correcta de ver los archivos dentro de la carpeta
+git ls-tree -r --name-only HEAD terminal_practica
+-r = recursivo
+🔹 Ahora sí verás todos los archivos dentro de esa carpeta
+Ver solo el contenido del nivel 1
+git ls-tree HEAD terminal_practica
+Ver archivos como árbol (muy visual)
+tree terminal_practica
+
+Limitar niveles (muy práctico)
+tree -L 2 terminal_practica  
+Muestra solo 2 niveles de carpetas.
+Ver archivos ocultos
+tree -a terminal_practica
+Ver solo directorios
+tree -d terminal_practica
+Ignorar .git (ideal para repos)
+tree -I ".git"
+O combinado:
+tree -a -I ".git"
+Ver estructura y conteo
+tree -h
+Al final te muestra algo como:
+3 directories, 5 files
+tree + Git (combo perfecto)
+Ver cómo Git ve el repo:
+tree -a -I ".git"
+git status
+Ver estructura de un commit:
+git ls-tree -r --name-only HEAD | tree --fromfile .
+
+Consejo de aprendizaje
+Cuando aprendes Git:
+1️⃣ tree → ves la estructura
+2️⃣ git status → ves qué cambió
+3️⃣ git log --oneline → ves la historia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
