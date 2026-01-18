@@ -1,0 +1,35 @@
+Comandos que veremos 
+mkdir  crear carpetas 
+touch  crear archivos 
+ls     comprobar 
+Ejemplo Crear una carpeta:
+mkdir practica_linux
+comprobar ls 
+Deveria ver:
+practica_linux
+Crear un archivo vacio:
+touch archivo1.txt archivo2.txt
+Crear carpetas dentro de otra
+mkdir carpeta1 carpete 2
+Ejercicios de práctica
+Entrar a una carpeta personal con cd ~
+crear una carpeta llamada: 
+mkdir terminal_practica
+Ejercicio 2
+Entrar a terminal_practica
+crea:
+2 carpetas: docs y scripts
+3 archivos: nota.txt, lista.txt, readme.md
+Ejercicio 3
+Usa ls -l
+Observa :
+tamaños
+fechas 
+permisos (los veremos despues)
+Ejercicio 4 (extra)
+Crea una carpeta con subcarpetas de una sola vez:
+mkdir -p proyectos/web/html
+Tips útiles
+mkdir -p crea carpetas anidadas
+touch tambien actualiza fechas de archivos 
+Usa TAB para evitar errores al escribir

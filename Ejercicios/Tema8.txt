@@ -1,0 +1,82 @@
+Tema 8: Procesos y sistema (ps, top, kill)
+¿Qué es un proceso?
+
+👉 Es un programa en ejecución
+Ejemplo: navegador, terminal, editor, etc.
+Ejemplo guiado
+Ver procesos actuales
+ps
+Muestra solo los de tu terminal.
+Ver todos los procesos (muy común)
+ps aux
+Columnas importantes:
+
+PID → ID del proceso
+
+%CPU → uso de CPU
+
+%MEM → uso de memoria
+
+COMMAND → comando ejecutado
+Ver procesos en tiempo real
+top
+
+Controles:
+
+q → salir
+
+P → ordenar por CPU
+
+M → ordenar por memoria
+(Si tienes htop, aún mejor: htop)
+
+Buscar un proceso
+ps aux | grep nano
+
+Matar un proceso (con cuidado)
+kill PID
+Ejemplo:
+kill 1234
+Forzar cierre (solo si no responde)
+kill -9 PID
+Ejercicios de práctica (seguros)
+Ejercicio 1
+
+Ejecuta:
+ps aux
+Observa cuántos procesos hay.
+Ejercicio 2
+
+Abre nano:
+nano nota.txt
+En otra terminal:
+ps aux | grep nano
+Ejercicio 3
+Cierra nano correctamente con:
+Ctrl + X
+
+Ejercicio 4 (extra)
+Ejecuta:
+top
+Observa el proceso que más CPU usa
+
+Sal con q
+
+Tips importantes
+
+Usa kill solo si es necesario
+
+kill -9 es la última opción
+
+ps aux | grep nombre es muy usado
+
+
+
+
+
+
+
+
+
+
+

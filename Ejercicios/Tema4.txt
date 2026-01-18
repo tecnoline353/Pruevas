@@ -1,0 +1,39 @@
+Tema 4: Eliminar archivos y carpetas (⚠️ con cuidado)
+Comandos que veremos
+rm   borrar archivos
+rm -r borrar carpetas con contenido
+rmdir borrar carpetas vacias
+rm -i borrar con confirmacion 
+En linux no hay papelera dede la terminal. lo que borras, se borra.
+Ejemplo guiado
+Borrar un archivo 
+rm archivo.txt
+Borrar varios archivos 
+rm archivo1.txt archivo2.txt
+Borrar una carpeta vacia 
+rmdir carpeta_vacia
+borrar una carpeta con contenido
+rm -r carpeta_con_archivos
+Borrar con confirmacion (Recomendado)
+rm -ri carpeta_peligrosa
+Linux te preguntara antes de borrar cada cosa
+Ejercicio de practica (SEguros)
+Asegurate de estar en terminal_practica
+pwd
+Ejercicio 1
+Borra el archivo:
+lista.txt
+Ejercicio 2
+Borrar la carpeta:
+respaldo_docs
+usar rm -r
+Ejercicio 3 intenta borrar una carpeta vaia con:
+rmdir nombre_carpeta
+Ejercicio 4 (Extra)
+Borrar todo el contenido de scripts pero no la carpeta:
+pista:
+rm scripts/*
+Tips importantes
+Usar ls antes de borrar 
+Usa rm -i si tienes dudas 
+Nunca ejecutes rm -rf / (esto destruye el sistema )

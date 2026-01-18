@@ -1,0 +1,32 @@
+Tema 6: Buscar archivos y texto (find y grep)
+Comandos que veremos
+find  buscar archivos/carpetas
+grep  buscar texto dentro de archivos
+Ejemplo guiado
+Buscar un archivo por nombre
+find . -name "README.md"
+.significa "desde aqui".
+Buscar por extencion 
+find . -name "*.txt"
+Buscar carpetas find . -type d
+Buscar texto dentro de archivos 
+grep "Linux" README.md
+Buscar texto en muchos archivos
+grep " Linux" *.txt
+Buscar texto recursivamente (muy usado)
+grep -r "Linux" .
+Ejercicio 1 
+Buscar todos los archivos .txt:
+find . -name "*.txt"
+Ejercicio 2 buscar el archivo aprendizaje.txt:
+find . -name "aprendizaje.tst"
+Ejercicio 3 buscar la palabra Linux dentro de todo los archivos:
+grep -r "Linux" .
+Ejercicio 4 (Extra)
+busca solo en archivos .md:
+grep "proyecto" *.md
+Tips profesionales
+find busca archivos
+grep busca contenido
+-r = recursio
+Linux distingue mayúsculas/minúsculas

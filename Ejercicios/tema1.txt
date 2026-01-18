@@ -1,0 +1,23 @@
+Navegacion basica en terminal 
+pwd  muestra en que carpeta estas 
+ls lista archivos y carpetas 
+cd  cambia de carpeta
+cd ..   volver atras 
+Ejercicios de practica 
+Abre la terminalEjecuta pwd Anota mentalmente en qué carpeta está
+Ejercicio 2
+Ejecuta ls
+identifica el menos una carpeeta 
+Entra a esa carpeta con cd
+Ejercicio 3
+Usa pwd para confirmar donde estas 
+vuelve a la carpeta anterior usando : cd ..
+Ejercicio 4 (extra)
+intenta este comando ls -l
+Boserva: 
+permisos 
+tamaño
+fecha
+Tip importante
+TAB autocompleta nombres de carpetas y archivos 
+↑ ↓ navega por comandos anteriores

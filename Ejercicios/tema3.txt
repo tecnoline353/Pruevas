@@ -1,0 +1,27 @@
+Tema 3: Mover, copiar y renombrar (mv y cp)
+Comandos:
+mv   mover o renombrar 
+cp   copiar 
+cp -r  copiar carpetas 
+Ejemplo guiado
+Mover archivo a una carpeta 
+mv nota.txt lista.txt docs/
+Comprobar:
+ls docs
+Renombrar un archivo 
+mv readme.md README.md 
+Copiar un archivo
+cp README.md docs/
+Copiar una carpeta Completa 
+cp -r docs docs_backup
+Ejercicios de práctica
+Ejericio 1 
+Mueve README.md a la carpeta scripts
+Ejercicio 2 
+Copia README.md desde scripts hacia docs
+Ejercicio 3 
+Renombrar la carpeta:
+docs_backup a respaldo_docs
+Ejercicio 4 (Extra)
+Copiar la carpeta proyectos a:
+proyectos_copia

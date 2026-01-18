@@ -1,0 +1,65 @@
+Tema 7: Permisos y propietarios (chmod, chown)
+Entender los permisos 
+cuando usas:
+ls -l
+ves algo com:
+-rw-r--r--
+Que significa?
+
+| Parte | Significado                 |
+| ----- | --------------------------- |
+| `-`   | archivo (`d` sería carpeta) |
+| `rw-` | permisos del **usuario**    |
+| `r--` | permisos del **grupo**      |
+| `r--` | permisos de **otros**       |
+
+Tipos de permisos 
+r  leer (4)
+w  escribir(2)
+x  Ejecutar(1)
+Ejemplo guiado 
+Ver permisos 
+ls -l nota.txt
+Cambiar permisas con letras 
+chmod u+x nota.txt
+agrega ejecucion al usuario
+Quitar permisas 
+chmod o-w nota.txt
+quitar escritura a otros 
+Cambiar permisos con numeros (Muy usado)
+Ejemplo 
+chmod 644 nota.txt
+Significa:
+Usuario: rw-  6
+Grupo:  r--  4
+Otros:  r--  4
+Ejemplo comun 
+chmod 755 script.sh
+ejecutable
+Ejercicio de practica
+estando en terminal_practica
+Ejercicio 1 Mira los permisos de nota.txt:
+ls -l nita.txt
+Ejercicio 2 quita permiso de escritura a otros:
+chmod o-w nota.txt
+Ejercicio 3 
+Dale permisos:
+chmod 600 nota.txt
+solo tu puedes leer y escribir
+Ejercicio 4 (Extra)
+crea un archivo ejecutable:
+touch script.sh
+chmod +x script.sh
+Verifica:
+ls -l script.sh
+Propietario y grupo(chown)
+ver:
+ls -l
+Cambiar (requiere sudo):
+sudo chown usuario:grupo archivo.txt
+(No lo practiques aun si no es necesario)
+Tips clave
+chmod 77 (peligroso)
+chmod 755 scripts
+chmod 644 archivos
+x=ejecutable

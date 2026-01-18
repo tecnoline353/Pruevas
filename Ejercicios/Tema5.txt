@@ -1,0 +1,50 @@
+Tema 5: Ver y editar archivos desde la terminal
+Comandos que veremos 
+cat  mostrar contenido
+less ver archivos largos
+nano  editar archivos (editor simple)
+Ejemplo Guiado
+Escribir contenido en un archivo con nano
+nano nota.txt
+Dentro de nona:
+Escribe algo :
+Este es mi primer archivo en linux practicando la terminal
+Guarda:
+. Ctrl + O ENter
+Sal:
+. Ctrl + X
+Ver el contenido con cat 
+ca nota.txt
+Ver archivos largos con less
+less nota.txt
+Controles utiles en less:
+↓ ↑ → moverte
+q → salir
+/texto → buscar
+Ver varias cosas a la vez 
+cat nota.txt README.md
+Ejercico de practica 
+Asegurate de entrar en terminal_practica
+Ejercicio 1
+abre nano y edita README.md 
+Escribe:
+proyecto de practica linux
+usuarioa: mynor
+fecha: hoy
+Ejercicio 2 
+Muestra el contenido de README.md usuario:
+cat README.md
+Ejercicio 3 
+Abre README.md con:
+less README.md
+y sal con q
+Ejercicio 4 (extra)
+Crea un archivo nuevo y escribe contenido en una sola linea :
+echo "Aprendiendo linux desde la terminal" > aprendizaje.txt
+Verifica:
+cat aprendizaje.txt
+Tips importantes 
+cat = rapido
+less = seguro para archivos grandes 
+nano = ideal para principiantes
+> sobreescribe >> agrega al final 
